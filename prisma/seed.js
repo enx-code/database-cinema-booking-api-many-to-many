@@ -124,9 +124,26 @@ async function createSeats() {
           id: 1,
         },
       },
-      ticket: {
+    },
+  });
+
+  const seat2 = await prisma.seat.create({
+    data: {
+      number: 2,
+      screen: {
         connect: {
           id: 1,
+        },
+      },
+    },
+  });
+
+  const seat3 = await prisma.seat.create({
+    data: {
+      number: 3,
+      screen: {
+        connect: {
+          id: 2,
         },
       },
     },
